@@ -152,7 +152,7 @@ body {
   font-weight: 400;
   font-style: normal;
   line-height: 1.3;
-  color: #111;
+  color: #333;
   background-color: #fff;
 }
 
@@ -176,7 +176,7 @@ button {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #333;
 }
 
 a:hover {
@@ -396,6 +396,10 @@ img {
 /*=================================================================*/
 .bg-blue-28 {
   background-color: #284fa7;
+}
+
+.bg-blue-15 {
+  background-color: #152764;
 }
 
 .bg-fffe {
@@ -736,6 +740,35 @@ img {
   box-shadow: 0 4px 16px rgba(163, 161, 161, 0.5);
 }
 
+/*=================================================================*/
+.line-15 {
+  line-height: 0.9375rem;
+}
+
+.line-19 {
+  line-height: 1.1875rem;
+}
+
+.line-22 {
+  line-height: 1.375rem;
+}
+
+.line-26 {
+  line-height: 1.625rem;
+}
+
+.line-32 {
+  line-height: 2rem;
+}
+
+.line-34 {
+  line-height: 2.125rem;
+}
+
+.line-46 {
+  line-height: 2.875rem;
+}
+
 #header {
   position: sticky;
   top: 0;
@@ -998,13 +1031,210 @@ img {
 }
 
 #main {
-  padding-top: 1.5625rem;
+  padding-top: 1.25rem;
 }
 
 .main {
   display: grid;
-  grid-template-columns: 1fr 20rem;
+  grid-template-columns: 1fr 18.75rem;
   grid-gap: 3.125rem;
+}
+
+.row-one-large__trending {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-left-row-one {
+  display: grid;
+  grid-template-columns: 1fr 15.625rem;
+  grid-gap: 1.375rem 2.5rem;
+}
+
+.row-one-thumb {
+  padding-top: 1.375rem;
+}
+
+.row-one-thumb:first-child {
+  padding-top: 0;
+}
+
+.row-one-thumb .row-one-thumb__content {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.row-one-thumb:last-child .row-one-thumb__content {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.main-left-row-two {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.25rem;
+}
+
+.row-two-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-two-item__img {
+  flex-shrink: 0;
+}
+
+.row-two-item__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.row-two-item__public {
+  margin-top: auto;
+}
+
+.main-left-row-three {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 15.625rem;
+  grid-gap: 1.25rem;
+}
+
+.row-three__left-item {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.row-three__left-item:first-child {
+  padding-top: 0;
+}
+
+.row-three__left-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.row-three__left-img {
+  width: 30%;
+  flex-shrink: 0;
+}
+
+.row-three__left-content {
+  flex: 1;
+}
+
+.most-read__heading {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.most-read__item {
+  display: flex;
+  margin-top: 1.5625rem;
+}
+
+.most-read__content {
+  margin-left: 0.875rem;
+}
+
+.top-new {
+  margin-top: 1.375rem;
+}
+
+.header-block {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.9375rem;
+}
+
+.header-block__link {
+  display: inline-block;
+  line-height: 1;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.header-block__item + .header-block__item {
+  margin-left: 1.25rem;
+}
+
+.header-block__link.active {
+  color: #284fa7;
+  font-weight: 700;
+  font-family: "Helvetical Neue", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.header-block__link.active::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.325rem;
+  background: #284fa7;
+  bottom: -0.9375rem;
+}
+
+.top-new-content {
+  display: grid;
+  grid-template-columns: 18.75rem 1fr;
+  grid-gap: 1.875rem;
+}
+
+.top-new__item {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+.top-new__item:first-child {
+  padding-top: 0;
+}
+
+.top-new__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.top-new__item--img {
+  width: 35%;
+  flex-shrink: 0;
+}
+
+.top-new__item--text {
+  flex: 1;
+  padding-right: 0.9375rem;
+}
+
+.companies,
+.invseting,
+.banking-finace {
+  margin-top: 1.875rem;
+}
+
+.invseting-item {
+  display: flex;
+  width: 100%;
+}
+
+.invseting-item__img {
+  flex-shrink: 0;
+  width: 40%;
+}
+
+.invseting-item__img .thumb-5x3 {
+  padding-bottom: 100%;
+}
+
+.invseting-item__content {
+  flex: 1;
+  padding-left: 0.625rem;
 }
 
 #back-top {
