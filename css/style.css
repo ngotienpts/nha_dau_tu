@@ -389,6 +389,10 @@ img {
   color: #e0e0e0;
 }
 
+.text-gray-fc {
+  color: #FCFAF6;
+}
+
 .text-red-c43 {
   color: #c43000;
 }
@@ -400,6 +404,10 @@ img {
 
 .bg-blue-15 {
   background-color: #152764;
+}
+
+.bg-blue-03 {
+  background-color: #03A9F4;
 }
 
 .bg-fffe {
@@ -1170,13 +1178,21 @@ img {
   position: relative;
 }
 
+.header-block__link.active.fix-size {
+  font-size: 1.125rem;
+}
+
+.header-block__link.active.fix-color--red {
+  color: #C43000;
+}
+
 .header-block__link.active::before {
   position: absolute;
   content: "";
   width: 100%;
   height: 0.325rem;
   background: #284fa7;
-  bottom: -0.9375rem;
+  bottom: -1rem;
 }
 
 .top-new-content {
@@ -1214,7 +1230,11 @@ img {
 
 .companies,
 .invseting,
-.banking-finace {
+.banking-finace,
+.consulting,
+.travle-life,
+.editor-picks,
+.opinion {
   margin-top: 1.875rem;
 }
 
@@ -1237,6 +1257,137 @@ img {
   padding-left: 0.625rem;
 }
 
+.consulting-main-news {
+  display: grid;
+  grid-template-columns: 1fr 18.75rem;
+  grid-gap: 0.75rem;
+}
+
+.kpmg-img {
+  max-height: 2.375rem;
+  width: auto;
+}
+
+.author-link {
+  display: flex;
+  align-items: center;
+}
+
+.author-img {
+  width: 4.375rem;
+  height: 4.375rem;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.consulting-related-news {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.25rem;
+}
+
+.latest-news__list {
+  max-height: 25rem;
+  overflow: auto;
+  margin-bottom: 1.875rem;
+}
+
+.latest-news__item,
+.editor-picks__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.latest-news__item:last-child {
+  border-bottom: none;
+}
+
+.latest-news__list::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+
+.latest-news__list::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+}
+
+.latest-news__list::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.editor-picks__item {
+  position: relative;
+}
+
+.editor-picks__item::before {
+  position: absolute;
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #03A9F4;
+  border-radius: 50%;
+  top: 34%;
+  left: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.opinion-item {
+  padding: 0.625rem 0;
+}
+
+.opinion-item .author-link {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.travel-life__content {
+  display: grid;
+  grid-template-columns: 16.875rem 1fr 18.75rem;
+}
+
+.travel-life__center {
+  padding-left: 1.25rem;
+  padding-right: 1.875rem;
+}
+
+.travel-life__item {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.travel-life__item:first-child {
+  padding-top: 0;
+}
+
+.travel-life__item:last-child {
+  border-bottom: none;
+}
+
+.travel-life__item__img {
+  width: 30%;
+  flex-shrink: 0;
+}
+
+.travel-life__item__img .thumb-5x3 {
+  padding-bottom: 100%;
+}
+
+.travel-life__item__content {
+  flex: 1;
+  padding-left: 0.625rem;
+}
+
+.banner-footer {
+  background: #F6F7FB;
+}
+
 #back-top {
   position: fixed;
   right: 1rem;
@@ -1256,6 +1407,71 @@ img {
   -ms-transition: all 0.6s;
   -o-transition: all 0.6s;
   user-select: none;
+}
+
+.footer-top__left-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social__item + .footer-social__item {
+  margin-left: 0.625rem;
+}
+
+.footer-social__link {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social__icon {
+  height: 0.9375rem;
+  width: auto;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 27rem;
+  grid-gap: 1.25rem;
+  padding: 2.375rem 0 1.875rem;
+}
+
+.footer-top__left-text {
+  margin-top: 1.875rem;
+}
+
+.footer-top__right-link {
+  display: inline-block;
+  line-height: 1.2;
+  height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-top__right-link + .footer-top__right-link {
+  margin-left: 1.25rem;
+}
+
+.footer-top__right {
+  text-align: right;
+}
+
+.footer-top__right-link:last-child {
+  margin-left: 0;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
