@@ -121,7 +121,8 @@
   .consulting,
   .travle-life,
   .opinion,
-  .footer-top {
+  .footer-top,
+  .nav-header  {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
@@ -235,6 +236,65 @@
   }
   .footer-top__right {
     margin-top: 0.75rem;
+  }
+  .navigation-bar-item + .navigation-bar-item {
+    margin-left: 0;
+  }
+  
+  .nav-header__logo {
+    height: 1.875rem;
+  }
+  .nav-header__left {
+    display: flex;
+    align-items: center;
+  }
+  .nav-related {
+    border-top: 1px solid rgba($color: #fff, $alpha: 0.3);
+  }
+  .nav-related-link {
+    border: 1px solid rgba($color: #fff, $alpha: 0.3);
+    padding: 0.375rem 0.75rem;
+  }
+  .nav-related-link + .nav-related-link {
+    margin-left: 0.5rem;
+  }
+  .navigation-bar {
+    padding: 0.75rem 0;
+  }
+  .navigation-bar-list--mb {
+    max-width: 600px;
+  }
+  .navigation-bar-list--mb .slick-slide + .slick-slide{
+    margin-left: 1.25rem;
+  }
+  .navigation-bar-list--mb .slick-next {
+    right: 0;
+    background: linear-gradient(to right, #fff0, #00000085);
+    width: 3.375rem;
+    height: 2.75rem;
+  }
+  .navigation-bar-list--mb .slick-prev {
+    opacity: 0;
+  }
+  .navigation-bar-list--mb .slick-next:before {
+    content: '\21E2';
+    opacity: 1;
+    font-size: 1.5rem;
+    line-height: 0.5;
+  }
+  .footer-social__item:nth-child(2) {
+    margin-left: 0;
+  }
+  .footer-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.875rem 0.5rem;
+  }
+  .footer-logo-mb__logo {
+    height: 50px;
+  }
+  .footer-top {
+    padding: 1.5rem 0.75rem 4rem;
   }
   /*============================================================================     cate*/
 

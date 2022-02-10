@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // show sub menu mb
   var subMenu = document.querySelector(".sub-menu-mb-wrapper");
-  var showSubMenu = document.querySelector(".navbar-mb-item__bar");
+  var showSubMenu = document.querySelectorAll(".show-submenu");
 
   // width document
   var widthDoc = document.querySelector("body");
@@ -23,11 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       // show sub menu
       if (showSubMenu) {
-        showSubMenu.onclick = function () {
-          if (subMenu) {
-            subMenu.classList.add("active");
-          }
-        };
+        showSubMenu.forEach(function(index){
+          index.onclick = function () {
+            if (subMenu) {
+              subMenu.classList.add("active");
+            }
+          };
+        })
       }
       if (subMenu) {
         var subListMenu = subMenu.querySelectorAll(".sub-menu-mb-item");
@@ -50,7 +52,17 @@ document.addEventListener("DOMContentLoaded", function () {
       // hide cac element khi click ra ngoai
       document.addEventListener("click", function (e) {});
     },
-
+    // slide navbar mb
+    slideNavbarMb: function () {
+      $(".navigation-bar-list--mb").slick({
+        infinite: false,
+        dots: false,
+        arrows: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        variableWidth:true,
+      });
+    },
     // scroll top
     scrollFunc: function () {
       if (backTop) {
@@ -80,6 +92,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.handleEvent();
       // window scroll
       this.windowScroll();
+      // slide navbar mb
+      this.slideNavbarMb();
     },
   };
 

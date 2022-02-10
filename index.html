@@ -39,6 +39,9 @@
     <section class="nav-header-wrapper bg-blue-28">
       <div class="nav-header w-1140 d-flex align-items-center justify-content-between">
         <div class="nav-header__left">
+          <div class="navbar-mb-item navbar-mb-item__bar show-submenu d-lg-none d-block mr-20">
+            <i class="fas fa-bars text-white"></i>
+          </div>
           <a href="#">
             <img src="./images/logo.png" alt="" class="nav-header__logo">
           </a>
@@ -64,7 +67,12 @@
               <img src="./images/google+.svg" alt="" class="nav-header__right-icon">
             </a>
           </li>
-          <li class="nav-header__right-search">
+          <li class="nav-header__right-item d-lg-none d-block">
+            <a href="#" class="nav-header__right-link show-submenu">
+              <img src="./images/search.svg" alt="" class="nav-header__right-icon">
+            </a>
+          </li>
+          <li class="nav-header__right-search d-lg-block d-none">
             <form action="">
               <div class="position-relative nav-search-group">
                 <button class="btn btn-search text-gray-33">
@@ -78,6 +86,12 @@
       </div>
     </section>
     <!-- end main header -->
+    <!-- nav-related mb -->
+    <section class="nav-related px-12 py-2 bg-blue-28 d-lg-none d-block">
+      <a href="#" class="text-white btn bg-blue-28 fs-14 border-999 nav-related-link">Latest</a>
+      <a href="#" class="text-white btn bg-blue-28 fs-14 border-999 nav-related-link">Most Read</a>
+    </section>
+    <!-- end nav-related mb -->
     <!-- sub menu mb -->
     <section class="sub-menu-mb-wrapper d-lg-none d-block">
       <div class="sub-menu-mb">
@@ -117,45 +131,6 @@
               <a href="#" class="text-gray-33 fw-600 fs-16 text-uppercase">Đời sống</a>
             </div>
           </li>
-          <!--  -->
-          <li class="sub-menu-mb-item">
-            <div class="d-flex align-items-center justify-content-between">
-              <a href="#" class="text-gray-33 fw-600 fs-16 text-uppercase">Đời sống</a>
-            </div>
-          </li>
-          <!--  -->
-          <li class="sub-menu-mb-item">
-            <div class="d-flex align-items-center justify-content-between">
-              <a href="#" class="text-gray-33 fw-600 fs-16 text-uppercase">Đời sống</a>
-            </div>
-          </li>
-          <!--  -->
-          <li class="sub-menu-mb-item">
-            <div class="d-flex align-items-center justify-content-between">
-              <a href="#" class="text-gray-33 fw-600 fs-16 text-uppercase">Đời sống</a>
-            </div>
-          </li>
-          <!--  -->
-          <li class="sub-menu-mb-item bg-gray-f9">
-            <div class="d-flex align-items-center justify-content-between">
-              <a href="#" class="text-gray-33 fs-14 text-uppercase">Báo giá Banner</a>
-            </div>
-          </li>
-          <!--  -->
-          <li class="sub-menu-mb-item bg-gray-f9">
-            <div class="d-flex align-items-center justify-content-between">
-              <a href="#" class="text-gray-33 fs-14 text-uppercase">báo giá bài pr</a>
-            </div>
-          </li>
-          <!--  -->
-          <li class="sub-menu-mb-item-text fs-14">
-            <p class="mb-2">Tạp chí Đầu Tư Tài Chính Việt Nam - VietnamFinance</p>
-            <p class="mb-2">© Copyright 2005 VietnamFinance, All rights reserved</p>
-            <p class="mb-2">® VietnamFinance giữ bản quyền nội dung trên website này.</p>
-            <p class="mb-2">Hotline:</p>
-            <p class="mb-1">(84-24) 6666 6642</p>
-            <p>0933 428 686</p>
-          </li>
         </ul>
         <!-- end content -->
       </div>
@@ -166,7 +141,8 @@
       <!-- navigation bar-->
       <section class="navigation-bar-wrapper bg-blue-28">
         <div class="w-1140 navigation-bar">
-          <ul class="navigation-bar-list d-flex align-items-center">
+          <!-- pc -->
+          <ul class="navigation-bar-list d-lg-flex align-items-center d-none">
             <li class="navigation-bar-item fs-16">
               <a href="#"><i class="fas fa-home text-white"></i></a>
             </li>
@@ -203,21 +179,35 @@
               </ul>
             </li>
           </ul>
+          <!-- end pc -->
+          <!-- mobile -->
+          <ul class="navigation-bar-list navigation-bar-list--mb d-lg-none d-block px-12">
+            <li class="navigation-bar-item fs-16">
+              <a href="#"><i class="fas fa-home text-white"></i></a>
+            </li>
+            <li class="navigation-bar-item">
+              <a href="#" class="text-white">Top News</a>
+            </li>
+            <li class="navigation-bar-item">
+              <a href="#" class="text-white">Top News</a>
+            </li>
+            <li class="navigation-bar-item">
+              <a href="#" class="text-white">Top News</a>
+            </li>
+            <li class="navigation-bar-item">
+              <a href="#" class="text-white">Top News</a>
+            </li>
+            <li class="navigation-bar-item">
+              <a href="#" class="text-white">Top News</a>
+            </li>
+            <li class="navigation-bar-item">
+              <a href="#" class="text-white">Top News</a>
+            </li>
+          </ul>
+          <!-- end mobile -->
         </div>
       </section>
       <!-- end navigation bar-->
-      <!-- navbar mb -->
-      <section class="navbar-mb d-lg-none d-flex align-items-center justify-content-between position-relative">
-        <div class="navbar-mb-item navbar-mb-item__bar">
-          <i class="fas fa-bars text-white"></i>
-        </div>
-        <div class="navbar-mb-logo position-absolute">
-          <a href="#">
-            <img src="./images/logo-white-tet.svg" alt="">
-          </a>
-        </div>
-      </section>
-      <!-- end navbar mb -->
     </header>
     <!-- end header -->
     <!-- main -->
@@ -1981,7 +1971,7 @@
           <!-- header -->
           <div class="footer-top__left-header">
             <!-- logo -->
-            <div class="footer-logo">
+            <div class="footer-logo d-lg-block d-none">
               <a href="#" class="">
                 <img src="./images/logo.png" alt="" class="nav-header__logo">
               </a>
@@ -1989,7 +1979,7 @@
             <!-- end logo -->
             <!-- social -->
             <ul class="footer-social">
-              <li class="footer-social__item mr-10">
+              <li class="footer-social__item mr-10 d-lg-block d-none">
                 <a href="tel:0888558668" class="d-flex align-items-center">
                   <div class="footer-social__link">
                     <img src="./images/phone.svg" alt="footer-social__icon footer-social__phone">
@@ -2018,7 +2008,7 @@
                 </a>
               </li>
               <li class="footer-social__item">
-                <a href="#" class="footer-social__link">
+                <a href="#" class="footer-social__link show-submenu">
                   <img src="./images/search2.svg" alt="footer-social__icon footer-social__search">
                 </a>
               </li>
@@ -2026,6 +2016,46 @@
             <!-- end social -->
           </div>
           <!-- end header -->
+          <!-- category -->
+          <div class="d-lg-none d-block">
+            <ul class="footer-categories my-20">
+              <li class="footer-cate font-primary fw-600">
+                <a href="#" class="text-white">Top News</a>
+              </li>
+              <li class="footer-cate font-primary fw-600">
+                <a href="#" class="text-white">Colsunting</a>
+              </li>
+              <li class="footer-cate font-primary fw-600">
+                <a href="#" class="text-white">Investing</a>
+              </li>
+              <li class="footer-cate font-primary fw-600">
+                <a href="#" class="text-white">Travel & Life</a>
+              </li>
+              <li class="footer-cate font-primary fw-600">
+                <a href="#" class="text-white">Companies</a>
+              </li>
+              <li class="footer-cate font-primary fw-600">
+                <a href="#" class="text-white">Opinion</a>
+              </li>
+              <li class="footer-cate font-primary fw-600">
+                <a href="#" class="text-white">Real Estate</a>
+              </li>
+              <li class="footer-cate font-primary fw-600">
+                <a href="#" class="text-white">Infographics</a>
+              </li>
+              <li class="footer-cate font-primary fw-600">
+                <a href="#" class="text-white">Banking & Finace</a>
+              </li>
+            </ul>
+            <!-- logo -->
+            <div class="footer-logo-mb d-lg-none d-block">
+              <a href="#" class="">
+                <img src="./images/logo.png" alt="" class="footer-logo-mb__logo">
+              </a>
+            </div>
+            <!-- end logo -->
+          </div>
+          <!-- end category -->
           <!-- text -->
           <div class="footer-top__left-text text-white fs-14 font-secondary">
             <p class="line-26">Licence No.494/GP-BTTTT, dated August 3, 2021.</p>
