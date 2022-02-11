@@ -58,6 +58,15 @@ img {
 .font-secondary {
   font-family: "Arial", sans-serif;
 }
+.font-noto {
+  font-family: 'Noto Serif', serif;
+}
+.font-opensan {
+  font-family: 'Open Sans', sans-serif;
+}
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
 /*===========================================================================*/
 .w-1040 {
   max-width: 65rem;
@@ -507,6 +516,9 @@ img {
 }
 .line-26 {
   line-height: 1.625rem;
+}
+.line-28 {
+  line-height: 1.75rem;
 }
 .line-32 {
   line-height: 2rem;

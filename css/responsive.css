@@ -364,6 +364,43 @@
   }
 
   /*============================================================================     cate*/
+  .cate-left-row-one .row-one-large {
+    display: block;
+  }
+
+  .cate-left-row-one .row-one-large__img {
+    width: 100%;
+  }
+
+  .cate-left-row-one .row-one-small {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.625rem;
+    padding: 1.25rem 0.75rem;
+  }
+
+  .cate-left-row-one .row-one-thumb:first-child {
+    padding-top: 0;
+  }
+
+  .cate-left-row-three {
+    border-top: none;
+    margin-top: 0;
+    padding: 1rem 0.75rem;
+  }
+
+  .cate-left-row-three .row-three__left-img {
+    width: 35%;
+  }
+
+  .cate-right .most-read {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    margin-top: 1.875rem;
+  }
+
+  .cate-right .header-block__link.active {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */
