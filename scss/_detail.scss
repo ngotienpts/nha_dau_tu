@@ -69,3 +69,60 @@
 .detail-email-icon {
     background: #E5E5E5;
 }
+.detail-tags {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.detail-tag-icon {
+    font-size: 14px;
+    background: #F2EFEA;
+    width: 80px;
+    height: 36px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+.detail-tag-icon:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 8px solid #F2EFEA;
+    right: -8px;
+    position: absolute;
+}
+.detail-tag + .detail-tag {
+    margin-left: 1.25rem;
+}
+.detail-tag-item {
+    font-weight: 700;
+    line-height: 22px;
+    font-family: 'Roboto', sans-serif;
+    color: #4F4F4F;
+    font-size: 15px;
+    position: relative;
+}
+.detail-tag-item::before {
+    position: absolute;
+    content: '\2044';
+    color: #4f4f4f;
+    top: 50%;
+    left: -0.75rem;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.detail-tag-item:nth-child(2)::before {
+    content: '';
+}
+.detail-tag-item a:hover {
+    color: #284fa7;
+}
